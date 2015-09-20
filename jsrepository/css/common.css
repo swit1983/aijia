@@ -33,6 +33,10 @@ body{
   z-index: 1;
 }
 
+.head .bg{
+  background: url(../image/logo/back.png) repeat;
+  width: 100%;
+}
 .row{
   margin-right: -15px;
   margin-left: -15px;

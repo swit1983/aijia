@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>测试bootstart</title>
+    <title>艾佳淋浴房</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="淋浴房 武汉 武穴 黄石 卫浴">
     <meta name="author" content="zhangkai">
@@ -42,7 +42,7 @@
     }
     
     .carousel .item {
-        height: 400px;
+        height: 550px;
     }
     
     .carousel img {
@@ -50,7 +50,7 @@
         top: 0;
         left: 0;
         min-width: 100%;
-        height: 400px;
+        height: 550px;
     }
     
     .carousel-caption {
@@ -58,7 +58,7 @@
         position: static;
         max-width: 550px;
         padding: 0 130px;
-        margin-top: 200px;
+        margin-top: 400px;
     }
     
     .carousel-caption h1,
@@ -92,7 +92,7 @@
     ------------------------- */
     
     .featurette-divider {
-        margin: 80px 0;
+        margin: 40px 0;
         /* Space out the Bootstrap <hr> more */
     }
     
@@ -128,6 +128,19 @@
     .tab-pane div {
         border: 0;
     }
+
+    .img-tip{
+        width:180px;
+        height:180px;
+    }
+
+    .img-lun{
+        width:400px;
+        height:360px;
+    }
+    .tab-pane .span3{
+        width: 437px;
+    }
     </style>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -142,34 +155,44 @@
     <div id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="item active">
-                <img src="image/banner/product1.jpg" />
-                <div class="container">
+                <a href="#"><img src="image/banner/banner5.jpg" /></a>
+                <!-- <div class="container">
                     <div class="carousel-caption">
                         <h1>产品一.</h1>
                         <p class="lead">说明</p>
                         <a class="btn btn-large btn-primary" href="#">详情</a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="item">
-                <img src="image/banner/product2.jpg" />
-                <div class="container">
+                <a href="#"><img src="image/banner/banner2.jpg" /></a>
+                <!-- <div class="container">
                     <div class="carousel-caption">
                         <h1>产品二</h1>
                         <p class="lead">说明二</p>
                         <a class="btn btn-large btn-primary" href="#">详情</a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="item">
-                <img src="image/banner/product3.jpg" />
-                <div class="container">
+                <a href="#"><img src="image/banner/banner3.jpg" /></a>
+                <!-- <div class="container">
                     <div class="carousel-caption">
                         <h1>产品三.</h1>
                         <p class="lead">说明三</p>
                         <a class="btn btn-large btn-primary" href="#">详情</a>
                     </div>
-                </div>
+                </div> -->
+            </div>
+            <div class="item">
+                <a href="#"><img src="image/banner/banner1.jpg" /></a>
+                <!-- <div class="container">
+                    <div class="carousel-caption">
+                        <h1>产品三.</h1>
+                        <p class="lead">说明三</p>
+                        <a class="btn btn-large btn-primary" href="#">详情</a>
+                    </div>
+                </div> -->
             </div>
         </div>
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
@@ -199,26 +222,23 @@
         <!-- Three columns of text below the carousel -->
         <div class="row" style="padding-top:20px;margin-left:0;">
             <div class="span4" style="margin-left:0;">
-                <img class="img-circle" data-src="holder.js/140x140">
-                <h2>经典系列</h2>
+                <img class="img-circle img-tip" src="image/tip/bxg.png" data-src="holder.js/180x180">
+                <h2>豪华不锈钢系列</h2>
                 <p>经典就是经典无话可说，就是经典。哈哈哈</p>
-                <p><a class="btn" href="#">详情 &raquo;</a></p>
+                <p><a class="btn" href="list.html">详情 &raquo;</a></p>
             </div>
-            <!-- /.span4 -->
             <div class="span4" style="margin-left:0;">
-                <img class="img-circle" data-src="holder.js/140x140">
+                <img class="img-circle img-tip" src="image/tip/lc.png" data-src="holder.js/180x180" >
+                <h2>精品铝材系列</h2>
+                <p>够大，实惠，一家人泡汤</p>
+                <p><a class="btn" href="list2.html">详情 &raquo;</a></p>
+            </div>
+            <div class="span4" style="margin-left:0;">
+                <img class="img-circle img-tip" src="image/tip/sex.jpg" height="500" width="375" data-src="holder.js/180x180">
                 <h2>性感系列</h2>
                 <p>性感就是欲遮还羞，哈哈</p>
                 <p><a class="btn" href="#">详情 &raquo;</a></p>
             </div>
-            <!-- /.span4 -->
-            <div class="span4" style="margin-left:0;">
-                <img class="img-circle" data-src="holder.js/140x140">
-                <h2>家庭系列</h2>
-                <p>够大，实惠，一家人泡汤</p>
-                <p><a class="btn" href="#">详情 &raquo;</a></p>
-            </div>
-            <!-- /.span4 -->
         </div>
         <!-- /.row -->
         <div class="tabbable" style="margin-top:20px;">
@@ -231,100 +251,86 @@
                     <ul class="thumbnails" id="newlist">
                         <li class="span3">
                             <div class="thumbnail">
-                                <img data-src="holder.js/300x250" alt="">
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <img data-src="holder.js/300x250" class="img-lun" alt="" src="image/bxg/bxg1.jpg">
+                                <!-- <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p> -->
                             </div>
                         </li>
                         <li class="span3">
                             <div class="thumbnail">
-                                <img data-src="holder.js/300x250" alt="">
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <img data-src="holder.js/300x250" class="img-lun" alt="" src="image/bxg/bxg2.jpg">
+                                <!-- <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p> -->
                             </div>
                         </li>
                         <li class="span3">
                             <div class="thumbnail">
-                                <img data-src="holder.js/300x250" alt="">
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <img data-src="holder.js/300x250" class="img-lun" alt="" src="image/bxg/bxg3.jpg">
+                                <!-- <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p> -->
                             </div>
                         </li>
                         <li class="span3">
                             <div class="thumbnail">
-                                <img data-src="holder.js/300x250" alt="">
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <img data-src="holder.js/300x250" class="img-lun" alt="" src="image/bxg/bxg4.jpg">
+                                <!-- <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p> -->
                             </div>
                         </li>
                         <li class="span3">
                             <div class="thumbnail">
-                                <img data-src="holder.js/300x250" alt="">
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <img data-src="holder.js/300x250" class="img-lun" alt="" src="image/bxg/bxg5.jpg">
+                                <!-- <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p> -->
                             </div>
                         </li>
                         <li class="span3">
                             <div class="thumbnail">
-                                <img data-src="holder.js/300x250" alt="">
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <img data-src="holder.js/300x250" class="img-lun" alt="" src="image/bxg/bxg6.jpg">
+                                <!-- <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p> -->
                             </div>
                         </li>
                         <li class="span3">
                             <div class="thumbnail">
-                                <img data-src="holder.js/300x250" alt="">
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <img data-src="holder.js/300x250" class="img-lun" alt="" src="image/lvc/lc1.jpg">
+                                <!-- <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p> -->
                             </div>
                         </li>
                         <li class="span3">
                             <div class="thumbnail">
-                                <img data-src="holder.js/300x250" alt="">
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <img data-src="holder.js/300x250" class="img-lun" alt="" src="image/lvc/lc2.jpg">
+                                <!-- <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p> -->
                             </div>
                         </li>
                         <li class="span3">
                             <div class="thumbnail">
-                                <img data-src="holder.js/300x250" alt="">
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <img data-src="holder.js/300x250" class="img-lun" alt="" src="image/lvc/lc3.jpg">
+                                <!-- <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p> -->
                             </div>
                         </li>
                         <li class="span3">
                             <div class="thumbnail">
-                                <img data-src="holder.js/300x250" alt="">
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <img data-src="holder.js/300x250" class="img-lun" alt="" src="image/lvc/lc4.jpg">
+                                <!-- <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p> -->
                             </div>
                         </li>
                         <li class="span3">
                             <div class="thumbnail">
-                                <img data-src="holder.js/300x250" alt="">
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <img data-src="holder.js/300x250" class="img-lun" alt="" src="image/lvc/lc5.jpg">
+                                <!-- <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p> -->
                             </div>
                         </li>
                         <li class="span3">
                             <div class="thumbnail">
-                                <img data-src="holder.js/300x250" alt="">
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
-                            </div>
-                        </li>
-                        <li class="span3">
-                            <div class="thumbnail">
-                                <img data-src="holder.js/300x250" alt="">
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
-                            </div>
-                        </li>
-                        <li class="span3" style="margin-right:30px">
-                            <div class="thumbnail">
-                                <img data-src="holder.js/300x250" alt="">
-                                <h3>Thumbnail label</h3>
-                                <p>Thumbnail caption...</p>
+                                <img data-src="holder.js/300x250" class="img-lun" alt="" src="image/lvc/lc6.jpg">
+                                <!-- <h3>Thumbnail label</h3>
+                                <p>Thumbnail caption...</p> -->
                             </div>
                         </li>
                     </ul>
